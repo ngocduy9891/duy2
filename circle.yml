@@ -1,14 +1,15 @@
 machine:
     timezone:
-        Asia/Singapore
+        Asia/Tokyo
 
     services:
         - docker
 dependencies:
     pre:
+        - sudo pip install --upgrade awscli
 
 deployment:
     production:
         branch: master
         commands:
-            - sudo ./deploy.sh $CIRCLE_SHA1
+            - ./deploy.sh $CIRCLE_SHA1
