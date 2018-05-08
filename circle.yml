@@ -6,7 +6,6 @@ machine:
         - docker
 dependencies:
     pre:
-        - sudo pip install --upgrade awscli
 
 deployment:
     production:
