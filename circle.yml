@@ -13,5 +13,5 @@ dependencies:
 deployment:
     production:
         branch: master
-        commands:
-            - sh ./deploy.sh
+        commands: |
+              sh ./deploy.sh $CIRCLE_SHA1
