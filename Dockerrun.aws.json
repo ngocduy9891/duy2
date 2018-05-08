@@ -1,7 +1,7 @@
 {
     "AWSEBDockerrunVersion": "1",
     "Image" : {
-        "Name" : "{AWS ID}.dkr.ecr.us-east-1.amazonaws.com/{リポジトリ名}:<tag>"
+        "Name" : "012881927014.dkr.ecr.ap-southeast-1.amazonaws.com/docker:prod"
     },
     "Ports" : [{ "ContainerPort": "80" }]
 }
