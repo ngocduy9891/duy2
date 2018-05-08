@@ -6,7 +6,8 @@ machine:
         - docker
 dependencies:
     pre:
-        - sudo apt-get update && apt-get install -y python-pip libpython-dev
+        - sudo apt-get update
+        - sudo apt-get install -y python-pip libpython-dev
         - sudo pip install --upgrade awscli
 
 deployment:
